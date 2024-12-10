@@ -1,4 +1,7 @@
-/* .gsi-material-button {
+/* Google Button White */
+
+
+.gsi-material-button {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -101,11 +104,11 @@
     background-color: #303030;
     opacity: 8%;
   }
-   */
+  
 
 /* Google Button Black  */
 
-.gsi-material-button {
+/* .gsi-material-button {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -213,4 +216,4 @@
   background-color: white;
   opacity: 8%;
 }
-
+ */

@@ -2,7 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import { googleLogout, useGoogleLogin } from "@react-oauth/google";
 import axios from "axios";
-import GoogleButton from "./components/GoogleLoginButton";
+import GoogleButton from "./GoogleLoginButton/GoogleLoginButton";
 
 function App() {
   const [user, setUser] = useState([]);
