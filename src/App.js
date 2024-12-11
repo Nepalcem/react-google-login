@@ -2,11 +2,13 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import { googleLogout, useGoogleLogin } from "@react-oauth/google";
 import axios from "axios";
-import GoogleButton from "./GoogleLoginButton/GoogleLoginButton";
+import ResponsiveGoogleButton from "./GoogleLoginButton/ResponsiveGoogleLoginButton";
 
 function App() {
   const [user, setUser] = useState([]);
-  const [profile, setProfile] = useState([]);
+  const [profile, setProfile] = useState(false);
+
+console.log(Boolean(profile));
 
   const login = useGoogleLogin({
     onSuccess: (codeResponse) => {
@@ -57,7 +59,7 @@ function App() {
           <button onClick={logOut}>Log out</button>
         </div>
       ) : (
-        <GoogleButton onClick={login}/>
+        <ResponsiveGoogleButton onClick={login}/>
       )}
     </div>
   );
